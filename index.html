@@ -6,7 +6,7 @@
         <title>Pizza Navigation</title>
 
         <link rel="stylesheet" href="styles/main.css"/>
-        <link rel="stylesheet" href="styles/navbar.css">
+        <!--<link rel="stylesheet" href="styles/navbar.css">-->
 
         <script src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script src="scripts/navbar.js"></script>
@@ -18,15 +18,13 @@
     </head>
 
     <body ng-app="Pizza" ng-controller="PizzaController">
-        <div id='cssmenu'>
-            <nav>
-                <ul>
-                    <li class="active"><a ng-href="#/pizza">Home</a></li>
-                    <li><a href="#/order">Order</a></li>
+        <nav class="navbar navbar-default">
+            <ul>
+                <li class="active"><a ng-href="#/pizza">Home</a></li>
+                <li><a ng-href="#/order">Order</a></li>
 
-                </ul>
-            </nav>
-        </div>
+            </ul>
+        </nav>
 
         <main ui-view></main>
 

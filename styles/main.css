@@ -9,7 +9,6 @@ body {
 nav {
     position: fixed;
     background-color: #181C22;
-    font-variant: small-caps;
     width: 100%;
     z-index: 1;
 }
@@ -26,5 +25,5 @@ nav li {
 }
 
 nav a {
-    color: #FFF;
+    color: #000000;
 }

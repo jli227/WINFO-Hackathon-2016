@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5577c66-8ef7-4bfe-9b37-300f66555081" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore/.idea/WINFO-Hackathon-2016.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/angularfire.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/checkout.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/order.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/pizza.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/main.css" afterPath="$PROJECT_DIR$/styles/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/order.html" afterPath="$PROJECT_DIR$/views/order.html" />
     </list>
     <ignored path="WINFO-Hackathon-2016.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,8 +57,8 @@
       <file leaf-file-name="order.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/order.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13349515">
-              <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.053398058">
+              <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -120,8 +108,8 @@
         <option value="$PROJECT_DIR$/views/pizza.html" />
         <option value="$PROJECT_DIR$/scripts/app.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/styles/main.css" />
         <option value="$PROJECT_DIR$/views/order.html" />
+        <option value="$PROJECT_DIR$/styles/main.css" />
       </list>
     </option>
   </component>
@@ -484,8 +472,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/order.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13349515">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.053398058">
+          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
           <folding />
         </state>
       </provider>

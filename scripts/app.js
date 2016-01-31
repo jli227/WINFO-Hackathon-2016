@@ -1,4 +1,3 @@
-
 angular.module('Pizza', ['ui.router', 'firebase'])
     .constant('ref', new Firebase("https://pizza-service.firebaseio.com/"))
     .config(function($stateProvider, $urlRouterProvider) {
@@ -97,5 +96,5 @@ angular.module('Pizza', ['ui.router', 'firebase'])
             method: "POST",
             url: "https://api.twilio.com/2010-04-01/Accounts/SKc7fd174be57696e8a6d158f81351e268/Messages.json",
             data: {To: '2066500642', From: '+12065390466', Body: "YOU SEXYYYYYY!"}
-
         });
+    }]);

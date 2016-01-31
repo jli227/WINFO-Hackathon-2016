@@ -1,6 +1,5 @@
-var BASE_URL = "https://api.twilio.com/2010-04-01/";
-
 angular.module('Pizza', ['ui.router', 'firebase'])
+    .constant('BASE_URL', "https://api.twilio.com/2010-04-01/")
     .constant('ref', new Firebase("https://pizza-service.firebaseio.com/"))
     .config(function($stateProvider, $urlRouterProvider) {
         $stateProvider
@@ -89,8 +88,9 @@ angular.module('Pizza', ['ui.router', 'firebase'])
             $scope.createAccount = false;
         };
     })
-    .controller('CheckoutController', function($scope) {
-        $scope.address = '123 Main St';
+    .controller('CheckoutController', function($scope, BASE_URL) {
+        $scope.name = "Brittney";
+        $scope.address = "123 Main St";
         $scope.submit = function() {
             $scope.request = $.ajax({
                 headers: {
@@ -98,7 +98,7 @@ angular.module('Pizza', ['ui.router', 'firebase'])
                 },
                 method: "POST",
                 url: BASE_URL + "Accounts/ACb69edd884b4252ce5ef5d3a268413e53/Messages.json",
-                data: {To: '2066500642', From: '+12065390466', Body: "This is an emergency notification sent from NAME. NAME is in an emergency, please call 911 and send them to this address: " + $scope.address}
+                data: {To: '2066500642', From: '+12065390466', Body: "This is an emergency notification sent from " + $scope.name + ", who is in an emergency. Please call 911 and send them to this address: " + $scope.address}
             });
         }
     });

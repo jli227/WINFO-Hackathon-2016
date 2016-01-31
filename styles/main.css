@@ -33,6 +33,11 @@ nav a {
     color: #FFF;
 }
 
+nav a:hover {
+    text-decoration: none;
+    color: #C0C0C0;
+}
+
 footer {
 	background-color: #E9EAEE;
 	padding: 20px;
@@ -57,7 +62,7 @@ img {
 }
 
 .cover {
-    background-image: url('../images/background.jpg');
+    /*background-image: url('../images/background.jpg');*/
 }
 
 h1 {

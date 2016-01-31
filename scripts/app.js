@@ -27,13 +27,13 @@ angular.module('Pizza', ['ui.router', 'firebase'])
     .controller('AccountHandler', function($scope, ref) {
         $scope.authData = ref.getAuth();
         $scope.userAccount = {};
-        $scope.signup = function() {
+        $scope.signup = function () {
             // TBI $scope.toggleLoading();
             $scope.errorMessage = '';
             ref.createUser({
-                username   : $scope.userAccount.username,
-                password   : $scope.userAccount.password
-            }, function(error, userData) {
+                username: $scope.userAccount.username,
+                password: $scope.userAccount.password
+            }, function (error, userData) {
                 if (error) {
                     $scope.errorMessage = error.message;
                 } else {
@@ -41,14 +41,14 @@ angular.module('Pizza', ['ui.router', 'firebase'])
                     $scope.success = true;
                     ref.child(userData.uid)
                         .set({
-                            firstName  : $scope.userAccount.firstName,
-                            lastName   : $scope.userAccount.lastName,
-                            email      : $scope.userAccount.email,
-                            address    : $scope.userAccount.address,
-                            city       : $scope.userAccount.city,
-                            state      : $scope.userAccount.state,
-                            zip        : $scope.userAccount.zip,
-                            orders     : ''
+                            firstName: $scope.userAccount.firstName,
+                            lastName: $scope.userAccount.lastName,
+                            email: $scope.userAccount.email,
+                            address: $scope.userAccount.address,
+                            city: $scope.userAccount.city,
+                            state: $scope.userAccount.state,
+                            zip: $scope.userAccount.zip,
+                            orders: ''
                         });
                 }
                 // TBI $scope.toggleLoading
@@ -56,13 +56,13 @@ angular.module('Pizza', ['ui.router', 'firebase'])
             });
         };
 
-        $scope.login = function() {
+        $scope.login = function () {
             // TBI $scope.toggleLoading();
             $scope.errorMessage = '';
             ref.authWithPassword({
-                username : $scope.userAccount.username,
-                password : $scope.userAccount.password
-            }, function(error, authData) {
+                username: $scope.userAccount.username,
+                password: $scope.userAccount.password
+            }, function (error, authData) {
                 if (error) {
                     $scope.errorMessage = error.message;
                 } else {
@@ -74,22 +74,21 @@ angular.module('Pizza', ['ui.router', 'firebase'])
             });
         };
 
-        $scope.logout = function() {
+        $scope.logout = function () {
             ref.unauth();
             location.reload();
         };
 
-        $scope.redirectToLogin = function() {
+        $scope.redirectToLogin = function () {
             $scope.errorMessage = '';
             $scope.createAccount = true;
         };
 
-        $scope.redirectToSignUp = function() {
+        $scope.redirectToSignUp = function () {
             $scope.errorMessage = '';
             $scope.createAccount = false;
         };
-    })                                                                                                       
-
+    })
     .controller('CheckoutController', function($scope) {
         $scope.request = $.ajax({
             headers: {
@@ -99,7 +98,6 @@ angular.module('Pizza', ['ui.router', 'firebase'])
             url: BASE_URL + "Accounts/ACb69edd884b4252ce5ef5d3a268413e53/Messages.json",
             data: {To: '2066500642', From: '+12065390466', Body: "This is an emergency notification sent from NAME. NAME is in an emergency, please call 911 and send them to this address: ADDRESS"}
         });
-
         $scope.submit = function() {
             console.log("hello");
         }

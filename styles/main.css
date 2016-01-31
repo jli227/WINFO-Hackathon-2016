@@ -1,4 +1,6 @@
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+@import url('https://fonts.googleapis.com/css?family=Arvo');
 
 body {
     font-family: Lato, 'Helvetica Neue', Helvetica, sans-serif;
@@ -8,15 +10,24 @@ body {
 
 nav {
     position: fixed;
+<<<<<<< HEAD
     background-color: #E9EAEE;
+=======
+>>>>>>> 61ed996d261a34ff50a2a1c675cf7ee3fb39fb38
     width: 100%;
+    padding: 0;
+    margin: 0;
     z-index: 1;
+<<<<<<< HEAD
     padding: 10px;
+=======
+    font-family: Arvo;
+>>>>>>> 61ed996d261a34ff50a2a1c675cf7ee3fb39fb38
 }
 
 nav ul {
-    margin-left: 15px;
-    padding-left: 0;
+    background-color: #000;
+    padding-left: 15px;
     margin-bottom: 0;
 }
 
@@ -26,6 +37,7 @@ nav li, li {
 }
 
 nav a {
+<<<<<<< HEAD
     color: #000000;
 }
 
@@ -45,4 +57,22 @@ img {
 
 #brands {
 	text-align: center;
+=======
+    color: #FFF;
+}
+
+.floatRight {
+    float: right;
+}
+
+.cover {
+    background-image: url('images/background.jpg');
+    width: 100%;
+}
+
+h1 {
+    font-family: Bangers;
+    text-align: center;
+    font-size: 50px;
+>>>>>>> 61ed996d261a34ff50a2a1c675cf7ee3fb39fb38
 }

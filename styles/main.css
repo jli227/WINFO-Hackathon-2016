@@ -3,14 +3,15 @@
 body {
     font-family: Lato, 'Helvetica Neue', Helvetica, sans-serif;
     font-weight: 300;
-    background-color: #E9EAEE;
+    background-color: white;
 }
 
 nav {
     position: fixed;
-    background-color: #181C22;
+    background-color: #E9EAEE;
     width: 100%;
     z-index: 1;
+    padding: 10px;
 }
 
 nav ul {
@@ -19,11 +20,29 @@ nav ul {
     margin-bottom: 0;
 }
 
-nav li {
+nav li, li {
     display: inline-block;
     padding: 0.5em;
 }
 
 nav a {
     color: #000000;
+}
+
+footer {
+	background-color: #E9EAEE;
+	padding: 20px;
+}
+
+img {
+	max-height: 100px;
+	text-align: center;
+}
+
+#titleee {
+	text-align:center;
+}
+
+#brands {
+	text-align: center;
 }

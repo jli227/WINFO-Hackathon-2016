@@ -19,7 +19,9 @@
             <ul>
                 <li class="active"><a href="#/pizza">Home</a></li>
                 <li><a href="#/order">Order</a></li>
-
+                <li id="bttnLogout" class="btn floatRight" ng-show="authData"><a href="#/index" ng-click="logout()">Logout</a></li>
+                <li id="bttnSignup" class="btn floatRight" ng-hide="authData"><a href="#/account" ng-click="redirectToSignUp()">Sign-up</a></li>
+                <li id="bttnLogin" class="btn floatRight" ng-hide="authData"><a href="#/account" ng-click="redirectToLogin()">Log In</a></li>
             </ul>
         </nav>
 

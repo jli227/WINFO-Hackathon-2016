@@ -86,10 +86,9 @@ angular.module('Pizza', ['ui.router', 'firebase'])
             $scope.errorMessage = '';
             $scope.createAccount = false;
         };
-    })                                                                                                       
-
+    })
     .controller('CheckOutController', ['$scope', '$http', function($scope, $http) {
-        $scope.request = $.ajax({
+        $scope.request = $http({
             headers: {
                 Authorization: "Basic " + btoa("SKc7fd174be57696e8a6d158f81351e268:8UQ4tp6tl25M2fOLIn2VVA8EwiY6EFaq")
             },

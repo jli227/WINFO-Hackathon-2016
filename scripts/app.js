@@ -1,3 +1,5 @@
+var BASE_URL = "https://api.twilio.com/2010-04-01/";
+
 angular.module('Pizza', ['ui.router', 'firebase'])
     .constant('ref', new Firebase("https://pizza-service.firebaseio.com/"))
     .config(function($stateProvider, $urlRouterProvider) {
@@ -14,7 +16,7 @@ angular.module('Pizza', ['ui.router', 'firebase'])
             .state('checkout', {
                 url: '/checkout',
                 templateUrl: 'views/checkout.html',
-                controller: 'CheckOutController'
+                controller: 'CheckoutController'
             })
             .state('account', {
                 url: '/account',
@@ -88,13 +90,17 @@ angular.module('Pizza', ['ui.router', 'firebase'])
         };
     })                                                                                                       
 
-    .controller('CheckOutController', ['$scope', '$http', function($scope, $http) {
+    .controller('CheckoutController', function($scope) {
         $scope.request = $.ajax({
             headers: {
-                Authorization: "Basic " + btoa("SKc7fd174be57696e8a6d158f81351e268:8UQ4tp6tl25M2fOLIn2VVA8EwiY6EFaq")
+                Authorization: "Basic " + btoa("ACb69edd884b4252ce5ef5d3a268413e53:62fb61967584d8a5e1387d2b7f5e8bbf")
             },
             method: "POST",
-            url: "https://api.twilio.com/2010-04-01/Accounts/SKc7fd174be57696e8a6d158f81351e268/Messages.json",
+            url: BASE_URL + "Accounts/ACb69edd884b4252ce5ef5d3a268413e53/Messages.json",
             data: {To: '2066500642', From: '+12065390466', Body: "YOU SEXYYYYYY!"}
         });
-    }]);
+
+        $scope.submit = function() {
+            console.log("hello");
+        }
+    });

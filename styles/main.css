@@ -10,19 +10,12 @@ body {
 
 nav {
     position: fixed;
-<<<<<<< HEAD
     background-color: #E9EAEE;
-=======
->>>>>>> 61ed996d261a34ff50a2a1c675cf7ee3fb39fb38
     width: 100%;
-    padding: 0;
     margin: 0;
     z-index: 1;
-<<<<<<< HEAD
     padding: 10px;
-=======
     font-family: Arvo;
->>>>>>> 61ed996d261a34ff50a2a1c675cf7ee3fb39fb38
 }
 
 nav ul {
@@ -37,8 +30,7 @@ nav li, li {
 }
 
 nav a {
-<<<<<<< HEAD
-    color: #000000;
+    color: #FFF;
 }
 
 footer {
@@ -57,7 +49,6 @@ img {
 
 #brands {
 	text-align: center;
-=======
     color: #FFF;
 }
 
@@ -66,13 +57,16 @@ img {
 }
 
 .cover {
-    background-image: url('images/background.jpg');
-    width: 100%;
+    background-image: url('../images/background.jpg');
 }
 
 h1 {
     font-family: Bangers;
     text-align: center;
     font-size: 50px;
->>>>>>> 61ed996d261a34ff50a2a1c675cf7ee3fb39fb38
+}
+
+.center {
+    text-align: center;
+    margin: auto;
 }

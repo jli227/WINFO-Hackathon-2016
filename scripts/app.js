@@ -90,15 +90,15 @@ angular.module('Pizza', ['ui.router', 'firebase'])
         };
     })
     .controller('CheckoutController', function($scope) {
-        $scope.request = $.ajax({
-            headers: {
-                Authorization: "Basic " + btoa("ACb69edd884b4252ce5ef5d3a268413e53:62fb61967584d8a5e1387d2b7f5e8bbf")
-            },
-            method: "POST",
-            url: BASE_URL + "Accounts/ACb69edd884b4252ce5ef5d3a268413e53/Messages.json",
-            data: {To: '2066500642', From: '+12065390466', Body: "This is an emergency notification sent from NAME. NAME is in an emergency, please call 911 and send them to this address: ADDRESS"}
-        });
+        $scope.address = '123 Main St';
         $scope.submit = function() {
-            console.log("hello");
+            $scope.request = $.ajax({
+                headers: {
+                    Authorization: "Basic " + btoa("ACb69edd884b4252ce5ef5d3a268413e53:62fb61967584d8a5e1387d2b7f5e8bbf")
+                },
+                method: "POST",
+                url: BASE_URL + "Accounts/ACb69edd884b4252ce5ef5d3a268413e53/Messages.json",
+                data: {To: '2066500642', From: '+12065390466', Body: "This is an emergency notification sent from NAME. NAME is in an emergency, please call 911 and send them to this address: " + $scope.address}
+            });
         }
     });
